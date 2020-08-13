@@ -1,0 +1,22 @@
+.content{
+  flex: 1;
+  display: flex;
+}
+
+.content_container{
+  margin: auto auto;
+}
+
+.content_logo{
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/images/INNOCOD_LOGO.png');
+}
+
+.sm_logo{
+  margin: 5px;
+}
+
+.content_sm{
+  display: flex;
+  justify-content: center;
+}

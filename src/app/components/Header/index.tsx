@@ -1,25 +1,29 @@
-import React from 'react';
-import { TodoTextInput } from '../TodoTextInput';
-import { TodoActions } from 'app/actions/todos';
+import React from 'react'
+import style from './style.css'
 
-export namespace Header {
-  export interface Props {
-    addTodo: typeof TodoActions.addTodo;
-  }
-}
+const Header = () => (
+  <div className={style.navbar}>
+  <div className={style.logo_navbar}>
+    <img src="../../../assets/images/INNOCOD_LOGO_condensed.png" />
+  </div>
+  <a href="#home">IT-услуги</a>
+  <a href="#news">Услуги для стартапов</a>
+  <a href="#">IT-компаниям</a>
+  <div className={style.dropdown}>
+    <button className={style.dropbtn}>О компании
+      <i className="fa fa-caret-down"></i>
+    </button>
+    <div className={style.dropdown_content} id="myDropdown">
+      <a href="#">О нас</a>
+      <a href="#">Контакты</a>
+      <a href="#">Вакансии</a>
+    </div>
+  </div>
+  <div className={style.rect}></div>
+  <button className={style.btn_need_consult}>
+    Бесплатная консультация
+  </button>
+</div>
+)
 
-export const Header = ({ addTodo }: Header.Props): JSX.Element => {
-  const handleSave = React.useCallback(
-    (text: string) => {
-      if (text.length) addTodo({ text });
-    },
-    [addTodo]
-  );
-
-  return (
-    <header>
-      <h1>Todos</h1>
-      <TodoTextInput newTodo onSave={handleSave} placeholder="What needs to be done?" />
-    </header>
-  );
-};
+export default Header
