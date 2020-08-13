@@ -1,5 +1,4 @@
 import React from 'react';
-import style from './style.css';
 import { RouteComponentProps } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { useTodoActions } from 'app/actions';
@@ -48,7 +47,7 @@ export const App = ({ history, location }: App.Props) => {
   const completedCount = React.useMemo(() => todos.filter((todo) => todo.completed).length, [todos]);
 
   return (
-    <div className={style.normal}>
+    <div>
       <TodoHeader addTodo={todoActions.addTodo} />
       <TodoList todos={filteredTodos} actions={todoActions} />
       <TodoFooter

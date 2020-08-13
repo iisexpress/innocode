@@ -1,4 +1,10 @@
-body{
+#root{
+  margin: 0px;
+  display: block;
+  height: 100%;
+}
+
+html, body, #root{
   margin: 0px;
   display: block;
   height: 100%;

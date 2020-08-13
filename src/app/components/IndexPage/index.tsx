@@ -5,7 +5,7 @@ const IndexPage = () => (
   <div className={style.content}>
   <div className={style.content_container}>
     <div className={style.content_logo}>
-      <img src="INNOCOD_LOGO.png" />
+      <img src="../../../assets/images/INNOCOD_LOGO.png" />
     </div>
     <div className={style.content_sm}>
       <div className={style.sm_logo + " instagram-bg"}>

@@ -46,6 +46,22 @@
   margin: auto 0;
 }
 
+.dropdown .dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #1B1B1B;
+  padding: 14px 16px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  background-color: inherit;
+  font-family: inherit;
+}
+
 .dropdown_content {
   display: none;
   position: fixed;
@@ -94,7 +110,7 @@
   border-radius: 10px;
   border-width: 0;
   width: 300px;
-  margin: 10;
+  margin: 10px !important;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
