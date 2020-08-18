@@ -7,6 +7,7 @@ import Container from './components/Container';
 import IndexPage from './components/IndexPage';
 import Header from './components/Header';
 import ContactPage from './components/ContactPage';
+import WorkAtUsPage from './components/WorkAtUsPage';
 
 export const App = hot(module)(() => (
   <Container>
@@ -14,6 +15,7 @@ export const App = hot(module)(() => (
     <Switch>
       <Route exact path="/" component={IndexPage} />
       <Route path="/contact" component={ContactPage} />
+      <Route path="/vacancies" component={WorkAtUsPage} />      
       <Route path="/todo" component={TodoApp} />
     </Switch>
     <Footer />
