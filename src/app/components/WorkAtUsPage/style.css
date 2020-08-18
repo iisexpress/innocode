@@ -27,6 +27,7 @@
   display: inline-flex;
   flex: 1;
   margin-top: 70px;
+  padding: 50px;
 }
 .column_left{  
   padding: 30px;
