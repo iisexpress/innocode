@@ -1,0 +1,103 @@
+.content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_container{
+  margin: auto auto;
+}
+
+.content_logo{
+  background-repeat: no-repeat;
+  background-image: url('../../../assets/images/INNOCOD_LOGO.png');
+}
+.map{
+  flex-basis: 300px;
+  background-color: chartreuse;
+}
+
+.sm_logo{
+  margin: 5px;
+}
+.sm_line{
+  display: inline-flex;
+}
+.columns{
+  display: inline-flex;
+  flex: 1;
+  margin-top: 70px;
+}
+.column_left{  
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.column_right{
+  padding: 30px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.info_label{
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+}
+.header_label{
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.input {    
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 48px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+.input::placeholder {
+  color: #C5CACD;
+}
+.send_button{
+  width: 200px;
+  border-color: #FFFFFF;
+  box-shadow: none;
+  background: #93C0DD;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.send_button:active{
+  border-color: none;
+}
+textarea:focus, input:focus, button:focus{
+  outline: none;
+}
+.news_header{    
+  text-align: center;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}

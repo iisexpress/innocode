@@ -1,12 +1,9 @@
-.sm_logo{
-  margin: 5px;
-}
 .footer{
   display: block;
   height: 150px;
   background: #636569;
 }
-.footer_logo{
+.footer-logo{
   text-align: center;
   font-family: Roboto Slab;
   font-style: normal;
@@ -17,17 +14,19 @@
   margin: 0 auto;
   padding-top: 10px;
 }
-.footer_sm{
+.footer-sm{
   display: flex;
   justify-content: center;
 }
-.footer_navbar{
-  width: 100%;
-  display: -webkit-inline-box;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  justify-content: space-around;
-  text-align: center;    
-  padding: 10px 0px;
+.instagram-sml{
+  background-repeat: no-repeat;
+}
+.facebook-sml{
+  background-repeat: no-repeat;
+}
+.telegram-sml{
+  background-repeat: no-repeat;
+}
+.whatsapp-sml{
+  background-repeat: no-repeat;
 }

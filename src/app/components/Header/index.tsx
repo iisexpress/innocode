@@ -6,15 +6,15 @@ const Header = () => (
   <div className={style.logo_navbar}>
     <img src="../../../assets/images/INNOCOD_LOGO_condensed.png" />
   </div>
-  <a href="#home">IT-услуги</a>
-  <a href="#news">Услуги для стартапов</a>
-  <a href="#">IT-компаниям</a>
+  <a href="/itservices">IT-услуги</a>
+  <a href="/forstartups">Услуги для стартапов</a>
+  <a href="/foritcompanies">IT-компаниям</a>
   <div className={style.dropdown}>
     <button className={style.dropbtn}>О компании
       <i className="fa fa-caret-down"></i>
     </button>
     <div className={style.dropdown_content} id="myDropdown">
-      <a href="#">О нас</a>
+      <a href="/aboutus">О нас</a>
       <a href="/contact">Контакты</a>
       <a href="/vacancies">Вакансии</a>
     </div>
