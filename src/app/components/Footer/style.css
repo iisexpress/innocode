@@ -1,3 +1,24 @@
 .sm_logo{
   margin: 5px;
 }
+.footer{
+  display: block;
+  height: 150px;
+  min-height: 60px;
+  background: #636569;
+}
+.footer_logo{
+  text-align: center;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 48px;
+  color: #FFFFFF;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.footer_sm{
+  display: flex;
+  justify-content: center;
+}

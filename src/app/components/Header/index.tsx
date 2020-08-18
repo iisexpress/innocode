@@ -15,7 +15,7 @@ const Header = () => (
     </button>
     <div className={style.dropdown_content} id="myDropdown">
       <a href="#">О нас</a>
-      <a href="#">Контакты</a>
+      <a href="/contact">Контакты</a>
       <a href="#">Вакансии</a>
     </div>
   </div>
