@@ -22,3 +22,14 @@
   display: flex;
   justify-content: center;
 }
+.footer_navbar{
+  width: 100%;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  /* flex-direction: row; */
+  /* flex: 1; */
+  justify-content: space-around;
+  text-align: center;
+}

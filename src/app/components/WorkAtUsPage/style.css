@@ -7,22 +7,6 @@
 .content_container{
   margin: auto auto;
 }
-
-.content_logo{
-  background-repeat: no-repeat;
-  background-image: url('../../../assets/images/INNOCOD_LOGO.png');
-}
-.map{
-  flex-basis: 300px;
-  background-color: chartreuse;
-}
-
-.sm_logo{
-  margin: 5px;
-}
-.sm_line{
-  display: inline-flex;
-}
 .columns{
   display: inline-flex;
   flex: 1;
