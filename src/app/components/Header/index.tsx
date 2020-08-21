@@ -3,9 +3,11 @@ import style from './style.css'
 
 const Header = () => (
   <div className={style.navbar}>
+  <a href="#/">
   <div className={style.logo_navbar}>
-    <img src="../../../assets/images/INNOCOD_LOGO_condensed.png" />
+      <img src="../../../assets/images/INNOCOD_LOGO_condensed.png" />
   </div>
+  </a>
   <a href="/itservices">IT-услуги</a>
   <a href="/forstartups">Услуги для стартапов</a>
   <a href="/foritcompanies">IT-компаниям</a>

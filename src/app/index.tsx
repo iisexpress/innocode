@@ -17,12 +17,12 @@ export const App = hot(module)(() => (
     <Header />
     <Switch>
       <Route exact path="/" component={IndexPage} />
-      <Route path="/itservices" component={ItServicesPage} />
-      <Route path="/forstartups" component={ForStartupsPage} />
-      <Route path="/foritcompanies" component={ForItCompaniesPage} />
-      <Route path="/contact" component={ContactPage} />
-      <Route path="/aboutus" component={AboutusPage} />
-      <Route path="/vacancies" component={WorkAtUsPage} />
+      <Route exact path="/itservices" component={ItServicesPage} />
+      <Route exact path="/forstartups" component={ForStartupsPage} />
+      <Route exact path="/foritcompanies" component={ForItCompaniesPage} />
+      <Route exact path="/contact" component={ContactPage} />
+      <Route exact path="/aboutus" component={AboutusPage} />
+      <Route exact path="/vacancies" component={WorkAtUsPage} />
     </Switch>
     <Footer />
   </Container>

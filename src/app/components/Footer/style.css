@@ -31,3 +31,13 @@
   text-align: center;    
   padding: 10px 0px;
 }
+.footer_navbar > a {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF; 
+  outline: none;
+  text-decoration: none;
+}
