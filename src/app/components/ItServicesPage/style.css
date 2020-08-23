@@ -2,6 +2,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
 }
 h2{  
   font-family: Nunito Sans;
@@ -16,9 +17,98 @@ h2{
 .services{
   text-align: center;  
 }
+.line{
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.service_item{
+  width: 284px;
+  height: 196px;
+
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(99, 101, 105, 0.25);
+  border-radius: 10px;    
+  padding: 10px;
+  display: grid;
+}
+.service_item_icon{
+  height: 150px;
+}
+.service_item_label{
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #1B1B1B;
+}
 .whywe{
   text-align: center;  
+  background:#c5cacd;
+  padding: 20px;
+}
+.whywe_text{
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #1B1B1B;
 }
 .getservice{
   text-align: center;  
+}
+.getservice_item{    
+  margin: auto auto;
+  width: 334px;
+  height: 192px;
+  background: #93C0DD;
+  box-shadow: 2px 2px 4px rgba(99, 101, 105, 0.25);
+  border-radius: 10px;
+  display: flex;
+}
+.getservice_item_container{
+  width: 358px;
+  height: 216px;
+  display: flex;
+}
+.getservice_item > label {
+  vertical-align: middle;
+  margin: auto;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.getservice_item_unvisible{
+  visibility: hidden;
+  width: 334px;
+  height: 192px;
+}
+.getservice_item_number{
+  display: flex;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(99, 101, 105, 0.25);
+}
+.getservice_item_number > label{
+  vertical-align: middle;
+  margin: auto;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #93C0DD;
 }

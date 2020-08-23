@@ -3,7 +3,7 @@ import style from './style.css'
 
 const Header = () => (
   <div className={style.navbar}>
-  <a href="#/">
+  <a href="/">
   <div className={style.logo_navbar}>
       <img src="../../../assets/images/INNOCOD_LOGO_condensed.png" />
   </div>
