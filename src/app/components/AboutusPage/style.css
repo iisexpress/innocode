@@ -27,6 +27,7 @@
   display: inline-flex;
   flex: 1;
   margin-top: 70px;
+  padding: 40px;
 }
 .column_left{  
   padding: 30px;
@@ -40,12 +41,18 @@
   display: flex;
   flex-direction: column;
 }
+.column_card{
+  height: 300px;
+  padding: 20px;
+}
 .info_label{
+  padding-top: 24px;
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 42px;
+  color: #1B1B1B;
 }
 .header_label{
   font-family: Nunito Sans;
@@ -65,11 +72,13 @@
   border-left: none;
   border-top: none;
   border-right: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 .input::placeholder {
   color: #C5CACD;
 }
-.send_button{
+.send_button{   
+  margin: auto;
   width: 200px;
   border-color: #FFFFFF;
   box-shadow: none;
@@ -87,7 +96,12 @@
 .send_button:active{
   border-color: none;
 }
-textarea:focus, input:focus, button:focus{
+
+button:active {
+  border-color: none;
+}
+
+textarea:focus, input:focus, button:focus {
   outline: none;
 }
 .news_header{    
@@ -101,3 +115,27 @@ textarea:focus, input:focus, button:focus{
   text-transform: uppercase;
   color: #000000;
 }
+
+.contactus{
+  display: block;
+  height: 500px;
+  background: #DEECF4;
+}
+.contactus_container{
+  margin: auto;
+  width: 512px;
+  display: flex;
+  flex-direction: column;
+}
+.column_left > h2{
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #1B1B1B;
+}
+

@@ -15,7 +15,8 @@ h2{
   color: #000000;
 }
 .services{
-  text-align: center;  
+  text-align: center; 
+  padding: 20px; 
 }
 .line{
   padding: 40px 0px;
@@ -60,7 +61,8 @@ h2{
   color: #1B1B1B;
 }
 .getservice{
-  text-align: center;  
+  text-align: center; 
+  padding: 20px; 
 }
 .getservice_item{    
   margin: auto auto;
@@ -76,7 +78,29 @@ h2{
   height: 216px;
   display: flex;
 }
-.getservice_item > label {
+.getservice_item_container_arrow{  
+  width: 18px;
+  height: 216px;
+  display: flex;
+}
+.line_down_arrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.getservice_item_container_down_arrow{  
+  width: 358px;
+  height: 24px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.getservice_item_container_down_arrow_space{  
+  width: 18px;
+  height: 24px;
+  display: flex;
+}
+.getservice_item > label,p {
   vertical-align: middle;
   margin: auto;
   font-family: Roboto Slab;

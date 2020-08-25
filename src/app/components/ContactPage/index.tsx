@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './style.css'
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
 const ContactPage = () => (
   <div className={style.content}>
@@ -35,6 +36,13 @@ const ContactPage = () => (
       </div>
     </div>
     <div className={style.map}>
+    <YMaps>
+      <div>
+      <Map defaultState={{ center: [55.751872, 48.752936], zoom: 16 }} style={{width: '100%', height: '300px'}} >
+      <Placemark geometry={[55.751872, 48.752936]} />
+      </Map>
+      </div>
+    </YMaps>
     </div>
 </div>
 )

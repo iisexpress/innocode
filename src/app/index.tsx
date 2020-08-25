@@ -24,6 +24,7 @@ export const App = hot(module)(() => (
       <Route exact path="/aboutus" component={AboutusPage} />
       <Route exact path="/vacancies" component={WorkAtUsPage} />
     </Switch>
+    
     <Footer />
   </Container>
 ));

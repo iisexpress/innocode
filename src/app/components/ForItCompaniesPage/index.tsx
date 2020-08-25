@@ -1,41 +1,191 @@
 import React from 'react'
 import style from './style.css'
+import ContactUs from 'app/components/ContactUs'
 
 const ForItCompaniesPage = () => (
   <div className={style.content}>
-    <div className={style.columns}>
-      <div className={style.column_left}>
-          <span className={style.header_label}>Контакты</span>
-          <div className={style.sm_line}>
-            <div className={style.sm_logo}>
-              <img src="assets/svg/instagram-sml-black.svg" />
-            </div>
-            <div className={style.sm_logo}>
-              <img src="assets/svg/facebook-sml-black.svg" />
-            </div>
-            <div className={style.sm_logo}>
-              <img src="assets/svg/telegram-sml-black.svg" />
-            </div>
-            <div className={style.sm_logo}>
-              <img src="assets/svg/whatsapp-sml-black.svg" />
-            </div>
+    <div className={style.services}>
+      <h2>услуги для IT-компаний</h2>
+      <h3>Комфортная и оперативная поддержка IT-компаний</h3>
+      <div className={style.line}>
+        <div className={style.service_item}>
+          <div className={style.service_item_header}>
+            <img src="assets/svg/legal-support.svg" />
+            <label>Юридическое<br/>сопровождение</label>
           </div>
-          <span className={style.info_label}>info@innocode.ru</span>
-          <span className={style.info_label}>+7(843)251-00-85</span>
-          <span className={style.info_label}>Республика Татарстан,</span>
-          <span className={style.info_label}>Верхнеуслонский р-н,</span>
-          <span className={style.info_label}>г. Иннополис, ул. Университетская 7</span>
+          <span className={style.service_item_label}>
+          - Создание любых видов<br/> договоров, NDA, договоров<br/> оказания услуг и др.<br/> 
+          - Политика обработки<br/> персональных данных<br/> 
+          - Регистрация товарного<br/> знака/ПО в Роспатенте.<br/> 
+          - Сопровождение сделок<br/> по продаже ПО
+          </span>
+        </div>
+        <div className={style.service_item}>
+            <div className={style.service_item_header}>
+            <img src="assets/svg/protection-interest.svg" />
+            <label>Защита<br/> интересов</label>
+            </div>
+          <span className={style.service_item_label}>
+          - Досудебное сопровождение: <br/>претензия, мирное разрешение<br/>
+          - Исковое заявление/отзыв<br/> 
+          - Представительство в суде <br/>(общая юрисдикция и арбитраж,<br/> все инстанции)<br/>
+          - Консультации на всех этапах
+          </span>
+        </div>
+        <div className={style.service_item}>
+          <div className={style.service_item_header}>
+            <img src="assets/svg/remote-accounting.svg" />
+            <label>Удаленный<br/>бухгалтерский<br/>учет</label>
+          </div>
+          <span className={style.service_item_label}>
+          - Создание и ведение<br/> необходимого портфеля<br/> документации<br/> 
+          - Постановка учета техники<br/> и прочих средств<br/> 
+          - Сдача отчетности <br/>
+          - Произведение начислений<br/> и оплат <br/>
+          - Реестр первичной документации.<br/>
+          </span>
+        </div>
+        <div className={style.service_item}>
+          <div className={style.service_item_header}>
+            <img src="assets/svg/hr-managment.svg" />
+            <label>Удаленное<br/>кадровое<br/>делопроизводство</label>
+            </div>
+          <span className={style.service_item_label}>
+          - Должностные инструкции <br/>
+          - Карточки личных дел <br/>
+          - Оформление и увольнение<br/> сотрудников <br/>
+          - Заключение трудовых<br/> договоров <br/>
+          - Банк трудовых книжек <br/>
+          - Ведение табеля учета рабочего<br/> времени и т.д.
+          </span>
+        </div>
       </div>
-      <div className={style.column_right}>           
-          <span className={style.header_label}>Напишите нам</span>
-          <input className={style.input} placeholder="Напишите нам"></input>
-          <input className={style.input} placeholder="Ваш email"></input>
-          <input className={style.input} placeholder="Ваш вопрос"></input>
-          <button className={style.send_button}>Отправить</button>
+      
+    </div>
+
+    
+    <div className={style.getservice}>
+      <h2>как получить услугу</h2>
+      <div className={style.line}>
+        <div className={style.getservice_item_container}>
+          <div className={style.getservice_item_number}>
+              <label>1</label>
+            </div>
+          <div className={style.getservice_item}>          
+            <p>
+              Оставляете заявку на<br/> звонок нашего<br/> специалиста любым <br/>удобным способом:<br/> 
+              <img src="assets/svg/telegram-white-sml.svg" />&nbsp;<img src="assets/svg/whatsapp-white-sml.svg" />&nbsp;
+              или звонок<br/> по номеру 8 800 000 000 00
+            </p>
+          </div>
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoright.svg" />
+        </div>
+        <div className={style.getservice_item_container}>
+          <div className={style.getservice_item_number}>
+              <label>2</label>
+            </div>
+          <div className={style.getservice_item}>          
+            <p>
+              За вами закрепляется <br/>персональный<br/> помощник<br/> с первого звонка<br/> до сдачи проекта
+            </p>
+          </div>
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoright.svg" />
+        </div>
+        <div className={style.getservice_item_container}>
+          <div className={style.getservice_item_number}>
+              <label>3</label>
+            </div>
+          <div className={style.getservice_item}>          
+            <label>
+            Обеспечиваем 100%<br/> конфиденциальность
+            </label>
+          </div>
+        </div>
+      </div>
+      <div className={style.line_down_arrow}>
+        <div className={style.getservice_item_container_down_arrow}></div>
+        <div className={style.getservice_item_container_down_arrow_space}></div>
+        <div className={style.getservice_item_container_down_arrow}></div>
+        <div className={style.getservice_item_container_down_arrow_space}></div>
+        <div className={style.getservice_item_container_down_arrow}>
+          <img src="assets/svg/gotodown.svg" />
+        </div>
+      </div>
+      <div className={style.line}>
+        <div className={style.getservice_item_container}>
+          <div className={style.getservice_item_number}>
+              <label>6</label>
+            </div>
+          <div className={style.getservice_item}>          
+            <label>
+            Формируем и<br/> подписываем договор
+            </label>
+          </div>
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoleft.svg" />
+        </div>
+        <div className={style.getservice_item_container}>
+          <div className={style.getservice_item_number}>
+              <label>5</label>
+            </div>
+          <div className={style.getservice_item}>          
+            <label>
+            Делаем предложение по <br/>сопровождению нашими<br/> специалистами
+            </label>
+          </div>
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoleft.svg" />
+        </div>
+        <div className={style.getservice_item_container}>
+          <div className={style.getservice_item_number}>
+              <label>4</label>
+            </div>
+          <div className={style.getservice_item}>          
+            <label>
+            Выявляем вашу<br/> потребность , в <br/>соответствии с ней<br/> квалифицированный<br/> специалист бесплатно<br/> предоставляет оценку,<br/> анализ и решение.
+            </label>
+          </div>
+        </div>
+      </div> 
+      <div className={style.line_down_arrow}>
+        <div className={style.getservice_item_container_down_arrow}>
+          <img src="assets/svg/gotodown.svg" />
+        </div>
+        <div className={style.getservice_item_container_down_arrow_space}></div>
+        <div className={style.getservice_item_container_down_arrow}></div>
+        <div className={style.getservice_item_container_down_arrow_space}></div>
+        <div className={style.getservice_item_container_down_arrow}></div>
+      </div>
+      <div className={style.line}>
+        <div className={style.getservice_item_container}>
+          <div className={style.getservice_item_number}>
+              <label>7</label>
+            </div>
+          <div className={style.getservice_item}>          
+            <label>
+            Получаете услугу
+            </label>
+          </div>
+        </div>
+        <div className={style.getservice_item_container_arrow} style={{ visibility: 'hidden'}}>
+          <img src="assets/svg/gotoright.svg" />
+        </div>
+        <div className={style.getservice_item_unvisible}>
+        </div>
+        <div className={style.getservice_item_container_arrow} style={{ visibility: 'hidden'}}>
+          <img src="assets/svg/gotoright.svg" />
+        </div>
+        <div className={style.getservice_item_unvisible}>
+        </div>
       </div>
     </div>
-    <div className={style.map}>
-    </div>
+    <ContactUs/>
 </div>
 )
 

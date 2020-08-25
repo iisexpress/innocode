@@ -19,10 +19,10 @@ const Footer = () => (
     </div>
   </div>
   <div className={style.footer_navbar}>
-    <a href="/contact">IT-услуги</a>
-    <a href="/contact">Услуги для стартапов</a>
-    <a href="/contact">IT-компаниям</a>
-    <a href="/contact">О нас</a>
+    <a href="/itservices">IT-услуги</a>
+    <a href="/forstartups">Услуги для стартапов</a>
+    <a href="/foritcompanies">IT-компаниям</a>
+    <a href="/aboutus">О нас</a>
     <a href="/contact">Контакты</a>
     <a href="/contact">Вакансии</a>    
   </div>

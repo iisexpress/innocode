@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './style.css'
+import ContactUs from 'app/components/ContactUs';
 
 const ItServicesPage = () => (
   <div className={style.content}>
@@ -85,20 +86,28 @@ const ItServicesPage = () => (
               <label>1</label>
             </div>
           <div className={style.getservice_item}>          
-            <label>
-              Оставляете заявку на звонок нашего специалиста любый удобным способом: или звонок по номеру 8 800 000 000 00
-            </label>
+            <p>
+              Оставляете заявку на<br/> звонок нашего<br/> специалиста любым <br/>удобным способом:<br/> 
+              <img src="assets/svg/telegram-white-sml.svg" />&nbsp;<img src="assets/svg/whatsapp-white-sml.svg" />&nbsp;
+              или звонок<br/> по номеру 8 800 000 000 00
+            </p>
           </div>
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoright.svg" />
         </div>
         <div className={style.getservice_item_container}>
           <div className={style.getservice_item_number}>
               <label>2</label>
             </div>
           <div className={style.getservice_item}>          
-            <label>
-              За вами закрепляется персональный помощник с первого звонка до сдачи проекта
-            </label>
-          </div>
+            <p>
+              За вами закрепляется <br/>персональный<br/> помощник<br/> с первого звонка<br/> до сдачи проекта
+            </p>
+          </div>          
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoright.svg" />
         </div>
         <div className={style.getservice_item_container}>
           <div className={style.getservice_item_number}>
@@ -106,21 +115,33 @@ const ItServicesPage = () => (
             </div>
           <div className={style.getservice_item}>          
             <label>
-              Выявляем вашу потребность
+              Выявляем вашу<br/> потребность
             </label>
           </div>
+        </div>
+      </div>
+      <div className={style.line_down_arrow}>
+        <div className={style.getservice_item_container_down_arrow}></div>
+        <div className={style.getservice_item_container_down_arrow_space}></div>
+        <div className={style.getservice_item_container_down_arrow}></div>
+        <div className={style.getservice_item_container_down_arrow_space}></div>
+        <div className={style.getservice_item_container_down_arrow}>
+          <img src="assets/svg/gotodown.svg" />
         </div>
       </div>
       <div className={style.line}>
         <div className={style.getservice_item_container}>
           <div className={style.getservice_item_number}>
-              <label>4</label>
+              <label>6</label>
             </div>
           <div className={style.getservice_item}>          
             <label>
-            Производим расчеты, выставляем коммерческое предложение со сметой работ и сроками
+            Производим расчеты,<br/> выставляем<br/> коммерческое<br/> предложение<br/> со сметой работ<br/> и сроками
             </label>
           </div>
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoleft.svg" />
         </div>
         <div className={style.getservice_item_container}>
           <div className={style.getservice_item_number}>
@@ -128,20 +149,32 @@ const ItServicesPage = () => (
             </div>
           <div className={style.getservice_item}>          
             <label>
-            Отвечаем на все вопросы и учитываем пожелания
+            Отвечаем на все вопросы<br/> и учитываем пожелания
             </label>
           </div>
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoleft.svg" />
         </div>
         <div className={style.getservice_item_container}>
           <div className={style.getservice_item_number}>
-              <label>6</label>
+              <label>4</label>
             </div>
           <div className={style.getservice_item}>          
             <label>
-            Озвучиваем наши возможности
+            Озвучиваем наши<br/> возможности
             </label>
           </div>
         </div>
+      </div>
+      <div className={style.line_down_arrow}>
+        <div className={style.getservice_item_container_down_arrow}>
+          <img src="assets/svg/gotodown.svg" />
+        </div>
+        <div className={style.getservice_item_container_down_arrow_space}></div>
+        <div className={style.getservice_item_container_down_arrow}></div>
+        <div className={style.getservice_item_container_down_arrow_space}></div>
+        <div className={style.getservice_item_container_down_arrow}></div>
       </div>
       <div className={style.line}>
         <div className={style.getservice_item_container}>
@@ -150,9 +183,12 @@ const ItServicesPage = () => (
             </div>
           <div className={style.getservice_item}>          
             <label>
-            Формируем и подписываем договор
+            Формируем и <br/>подписываем договор
             </label>
           </div>
+        </div>
+        <div className={style.getservice_item_container_arrow}>
+          <img src="assets/svg/gotoright.svg" />
         </div>
         <div className={style.getservice_item_container}>
           <div className={style.getservice_item_number}>
@@ -164,11 +200,15 @@ const ItServicesPage = () => (
             </label>
           </div>
         </div>
+        <div className={style.getservice_item_container_arrow} style={{ visibility: 'hidden'}}>
+          <img src="assets/svg/gotoright.svg" />
+        </div>
         <div className={style.getservice_item_unvisible}>
           
         </div>
       </div>
     </div>
+    <ContactUs/>
 </div>
 )
 

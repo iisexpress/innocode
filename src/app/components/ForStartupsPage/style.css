@@ -4,51 +4,19 @@
   flex-direction: column;
   padding-top: 60px;
 }
-
-.content_container{
-  margin: auto auto;
-}
-
-.content_logo{
-  background-repeat: no-repeat;
-  background-image: url('../../../assets/images/INNOCOD_LOGO.png');
-}
-.map{
-  flex-basis: 300px;
-  background-color: chartreuse;
-}
-
-.sm_logo{
-  margin: 5px;
-}
-.sm_line{
-  display: inline-flex;
-}
-.columns{
-  display: inline-flex;
-  flex: 1;
-  margin-top: 70px;
-}
-.column_left{  
-  padding: 30px;
-  flex-grow: 1;
+.line{
+  padding: 40px 0px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.column_right{
-  padding: 30px;
-  flex-grow: 1;
+.line_service{
+  padding: 8px 0px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.info_label{
-  font-family: Roboto Slab;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 32px;
-}
-.header_label{
+h2{  
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: normal;
@@ -56,38 +24,135 @@
   line-height: 49px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
-.input {    
+h3{  
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
-  line-height: 48px;
-  border-left: none;
-  border-top: none;
-  border-right: none;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
 }
-.input::placeholder {
-  color: #C5CACD;
+.services{
+  padding: 20px; 
 }
-.send_button{
-  width: 200px;
-  border-color: #FFFFFF;
-  box-shadow: none;
+.service_item{
+  width: 300px;
+  height: 194px;
+
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(99, 101, 105, 0.25);
+  border-radius: 10px;    
+  padding: 10px;
+  display: block;
+}
+.service_item_header{
+  width: 100%;
+  display: inline-flex;
+  text-align: left;
+  height: 100px;
+}
+.service_item_header > img{
+  margin: auto 0px;
+  width: 64px;
+  height: 64px;
+}
+.service_item_header > label{
+  margin: auto 0px;
+  padding-left: 20px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.service_item_label{
+  text-align: left !important;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;  
+  color: #000000;
+}
+.getservice{
+  text-align: center; 
+  padding: 20px; 
+}
+.getservice_item{    
+  margin: auto auto;
+  width: 334px;
+  height: 192px;
   background: #93C0DD;
+  box-shadow: 2px 2px 4px rgba(99, 101, 105, 0.25);
   border-radius: 10px;
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.getservice_item_container{
+  width: 358px;
+  height: 216px;
+  display: flex;
+}
+.getservice_item_container_arrow{  
+  width: 18px;
+  height: 216px;
+  display: flex;
+}
+.line_down_arrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.getservice_item_container_down_arrow{  
+  width: 358px;
+  height: 24px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.getservice_item_container_down_arrow_space{  
+  width: 18px;
+  height: 24px;
+  display: flex;
+}
+.getservice_item > label,p {
+  vertical-align: middle;
+  margin: auto;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.getservice_item_unvisible{
+  visibility: hidden;
+  width: 334px;
+  height: 192px;
+}
+.getservice_item_number{
+  display: flex;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px rgba(99, 101, 105, 0.25);
+}
+.getservice_item_number > label{
+  vertical-align: middle;
+  margin: auto;
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
-  line-height: 48px;
+  line-height: 32px;
   text-align: center;
-  color: #FFFFFF;
-}
-.send_button:active{
-  border-color: none;
-}
-textarea:focus, input:focus, button:focus{
-  outline: none;
+  color: #93C0DD;
 }
