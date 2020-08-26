@@ -1,0 +1,109 @@
+.closeButton_container{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.closeButton{
+  top: 0px;
+  right: 0px;
+  width: 20px;
+  height: 20px;  
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+}
+.fullfill{
+  display: contents;
+}
+.fullfill_content{    
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 30;
+}
+.fullfill_shadow{    
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #1B1B1B;
+  opacity: 0.7;
+  z-index: 20;
+}
+h4{
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+.inputs{
+  padding: 64px;
+}
+.header_label{
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.input {    
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 48px;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.input::placeholder {
+  color: #C5CACD;
+}
+.send_button{   
+  margin: auto;
+  width: 200px;
+  border-color: #FFFFFF;
+  box-shadow: none;
+  background: #93C0DD;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.send_button:active{
+  border-color: none;
+}
+
+button:active {
+  border-color: none;
+}
+
+textarea:focus, input:focus, button:focus {
+  outline: none;
+}
+.contactus{
+  display: flex;
+  flex-direction: column;
+  width: 696px;
+  height: 562px;
+  background: #FFFFFF;
+  margin: auto;
+}
+.contactus_container{
+  margin: auto;
+  width: 448px;
+  display: flex;
+  flex-direction: column;
+}

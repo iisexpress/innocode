@@ -1,10 +1,11 @@
 import React from 'react'
 import style from './style.css'
-import ModalWindow from 'app/components/ModalWindow'
+import modal_style from './modal_style.css'
 
 const Header = () => {
   const [showResults, setShowResults] = React.useState(false)
-  const onClick = () => setShowResults(true)
+  const onShowClick = () => setShowResults(true)
+  const onHideClick = () => setShowResults(false)
 
   return (
     <div className={style.navbar}>
@@ -27,10 +28,31 @@ const Header = () => {
       </div>
     </div>
     <div className={style.rect}></div>
-    <button className={style.btn_need_consult} onClick={onClick}>
+    <button className={style.btn_need_consult} onClick={onShowClick}>
       Бесплатная консультация
     </button>
-    { showResults ? <ModalWindow /> : null }
+    { showResults ? 
+      <div className={modal_style.fullfill}>
+      <div className={modal_style.fullfill_shadow}>    
+      </div>
+      <div className={modal_style.fullfill_content}>
+        <div className={modal_style.contactus}> 
+          <div className={modal_style.closeButton_container}>
+            <div className={modal_style.closeButton} onClick={onHideClick}>X</div>
+          </div>
+          <div className={modal_style.contactus_container}>  
+            <h4>Задайте вопрос, и вам ответит<br/> квалифицированный специалист</h4>
+            <div className={modal_style.inputs}>
+              <input className={modal_style.input} placeholder="Ваш номер телефона"></input>
+              <input className={modal_style.input} placeholder="Ваш email"></input>
+              <input className={modal_style.input} placeholder="Ваш вопрос"></input>
+            </div>
+            <button className={modal_style.send_button}>Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>     
+    : null }
   </div>
   )
 }
