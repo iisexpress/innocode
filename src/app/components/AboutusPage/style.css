@@ -17,6 +17,10 @@
   background-color: chartreuse;
 }
 
+form{
+  display: flex;
+  flex-direction: column
+}
 .sm_logo{
   margin: 5px;
 }

@@ -4,8 +4,41 @@ import modal_style from './modal_style.css'
 
 const Header = () => {
   const [showResults, setShowResults] = React.useState(false)
-  const onShowClick = () => setShowResults(true)
+  const [showMailSended, setShowMailSended] = React.useState(false)
+  const [phone, setPhone] = React.useState('')
+  const [email, setEmail] = React.useState('')
+  const [text, setText] = React.useState('')
+  const onShowClick = () => { 
+    setShowMailSended(false);
+    setShowResults(true);
+  }
   const onHideClick = () => setShowResults(false)
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log(event);
+    // Simple POST request with a JSON body using fetch
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ phone: phone, email: email, text: text })
+    };
+    fetch('/api/mail/send', requestOptions)
+        .then(response => response.json())
+        .then(data => {
+          setShowMailSended(true);
+          setTimeout(onHideClick,2000);
+        });
+  }
+
+  const onPhoneChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setPhone(e.currentTarget.value);
+  }
+  const onEmailChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setEmail(e.currentTarget.value);
+  }
+  const onTextChange = (e: React.FormEvent<HTMLInputElement>) => {
+    setText(e.currentTarget.value);
+  }
 
   return (
     <div className={style.navbar}>
@@ -18,9 +51,9 @@ const Header = () => {
     <a href="/forstartups">Услуги для стартапов</a>
     <a href="/foritcompanies">IT-компаниям</a>
     <div className={style.dropdown}>
-      <button className={style.dropbtn}>О компании
+      <div className={style.dropbtn}>О компании
         <i className="fa fa-caret-down"></i>
-      </button>
+      </div>
       <div className={style.dropdown_content} id="myDropdown">
         <a href="/aboutus">О нас</a>
         <a href="/contact">Контакты</a>
@@ -41,13 +74,18 @@ const Header = () => {
             <div className={modal_style.closeButton} onClick={onHideClick}>X</div>
           </div>
           <div className={modal_style.contactus_container}>  
-            <h4>Задайте вопрос, и вам ответит<br/> квалифицированный специалист</h4>
-            <div className={modal_style.inputs}>
-              <input className={modal_style.input} placeholder="Ваш номер телефона"></input>
-              <input className={modal_style.input} placeholder="Ваш email"></input>
-              <input className={modal_style.input} placeholder="Ваш вопрос"></input>
-            </div>
-            <button className={modal_style.send_button}>Отправить</button>
+            { showMailSended ? 
+              <div><h4>Ваше сообщение направлено,</h4><h4> вам ответит специалист "Иннокода"</h4></div> :
+              <form onSubmit={onSubmit}>
+                <h4>Задайте вопрос, и вам ответит<br/> квалифицированный специалист</h4>
+                <div className={modal_style.inputs}>
+                  <input className={modal_style.input} value={phone} onChange={onPhoneChange} name="phone" placeholder="Ваш номер телефона"></input>
+                  <input className={modal_style.input} value={email} onChange={onEmailChange} name="email" placeholder="Ваш email"></input>
+                  <input className={modal_style.input} value={text} onChange={onTextChange} name="text" placeholder="Ваш вопрос"></input>
+                </div>
+                <button className={modal_style.send_button}>Отправить</button>
+              </form>
+            }
           </div>
         </div>
       </div>

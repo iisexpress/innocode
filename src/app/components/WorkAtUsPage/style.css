@@ -41,7 +41,7 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-.input {    
+input {    
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: 300;
@@ -51,11 +51,25 @@
   border-top: none;
   border-right: none;
 }
-.input::placeholder {
+input::placeholder {
   color: #C5CACD;
 }
+.input_file{
+  display: none;
+}
+.input_file:invalid ~ .upload_button{    
+  display: none !important;
+}
+.input_file:valid ~ .send_button{
+  display: block;
+}
+.input_file:valid{
+  display: block;
+}
 .send_button{
-  width: 200px;
+  display: none;
+  width: 300px;
+  height: 50px;
   border-color: #FFFFFF;
   box-shadow: none;
   background: #93C0DD;
@@ -71,6 +85,28 @@
 }
 .send_button:active{
   border-color: none;
+}
+.upload_button{
+  width: 300px;
+  height: 50px;
+  background: #93C0DD;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  display: flex;
+}
+.upload_button_container > span{
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 48px;
+  color: #FFFFFF;    
+  padding: 0px 8px;
+}
+.upload_button_container{
+  margin: auto;
+  display: flex;
 }
 textarea:focus, input:focus, button:focus{
   outline: none;

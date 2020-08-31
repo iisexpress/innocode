@@ -9,7 +9,14 @@ const WorkAtUsPage = () => (
           <span className={style.info_label}>Пришлите свое резюме,</span>
           <span className={style.info_label}>мы свяжемся с Вами!</span>
           <input className={style.input} placeholder="Ваш email"></input>
-          <button className={style.send_button}>Загрузить резюме</button>
+          <label htmlFor="file-upload" className={style.upload_button}> 
+            <div className={style.upload_button_container}>
+              <img src="assets/svg/upload.svg" />
+              <span>Загрузить резюме</span>
+            </div>
+          </label>
+          <input className={style.input_file} id="file-upload" type="file" required/>         
+          <button className={style.send_button}>Отправить резюме</button>
       </div>
       <div className={style.column_right}>           
             <img src="assets/svg/workatus.svg" />

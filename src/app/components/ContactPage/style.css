@@ -17,6 +17,10 @@
   background-color: #C5CACD;
 }
 
+form{
+  display: flex;
+  flex-direction: column
+}
 .sm_logo{
   margin: 5px;
 }
