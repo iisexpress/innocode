@@ -15,9 +15,9 @@ const ModalWindow = () => {
             <div className={modal_style.contactus_container}>  
               <h4>Задайте вопрос, и вам ответит<br/> квалифицированный специалист</h4>
               <div className={modal_style.inputs}>
-                <input className={modal_style.input} placeholder="Ваш номер телефона"></input>
-                <input className={modal_style.input} placeholder="Ваш email"></input>
-                <input className={modal_style.input} placeholder="Ваш вопрос"></input>
+                <input className={modal_style.input} autoComplete="off" placeholder="Ваш номер телефона"></input>
+                <input className={modal_style.input} autoComplete="off" placeholder="Ваш email"></input>
+                <input className={modal_style.input} autoComplete="off" placeholder="Ваш вопрос"></input>
               </div>
               <button className={modal_style.send_button} onClick={onHideClick}>Отправить</button>
             </div>

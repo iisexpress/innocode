@@ -6,6 +6,7 @@ const WorkAtUsPage = () => {
   const [hasFile, setHasFile] = React.useState(false)
   const [fileName, setFileName] = React.useState('')
   const [email, setEmail] = React.useState('')
+  const [file, setFile] = React.useState<File>()
   const onEmailChange = (e: React.FormEvent<HTMLInputElement>) => {
     setEmail(e.currentTarget.value);
   }
@@ -13,24 +14,30 @@ const WorkAtUsPage = () => {
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log(event);
-    // Simple POST request with a JSON body using fetch
-    const requestOptions = {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({  email: email })
-    };
-    fetch('/api/mail/send', requestOptions)
-        .then(response => response.json())
-        .then(data => {
-          setShowMailSended(true);
-        });
+    event.preventDefault();
+    let formData = new FormData();
+    formData.append('file', file);
+    formData.append('email', event.target.email.value);
+    fetch("/api/mail/sendhr", {
+        method: 'POST',
+        credentials: 'include',
+        headers: {
+            'Accept': 'application/json, */*',
+        },
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      setShowMailSended(true);
+    });
   }
 
-  const handleChange = (selector: React.ChangeEvent<HTMLInputElement>) =>
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
   {
-      if(selector.target.files?.length){
+      if(event.target.files?.length){
         setHasFile(true);
-        setFileName(selector.target.files[0].name)
+        setFileName(event.target.files[0].name)
+        setFile(event.target.files[0])
       }else{
         setHasFile(false);
       }
@@ -54,7 +61,7 @@ const WorkAtUsPage = () => {
                 Спасибо, ваше резюме отправлено
               </div>   :
               <div>
-                <input className={style.input} onChange={onEmailChange} placeholder="Ваш email"></input>
+                <input className={style.input} onChange={onEmailChange} name="email" autoComplete="off" placeholder="Ваш email"></input>
                 {
                   hasFile ? <div className="">
                               <div className={style.fileName}><label>{fileName}</label><img onClick={onFileDelete} src="assets/svg/delete_file.svg" /></div>

@@ -41,7 +41,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-input {    
+input {   
+  width: 384px; 
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: 300;
@@ -123,4 +124,6 @@ textarea:focus, input:focus, button:focus{
   line-height: 48px;
   text-align: center;
   color: #93C0DD;
+  text-align: left;
+  padding-top: 64px;
 }

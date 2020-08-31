@@ -63,9 +63,9 @@ const ContactPage = () => {
             <div className={style.column_right}>      
               <form onSubmit={onSubmit}>           
               <span className={style.header_label}>Напишите нам</span>
-              <input className={style.input} value={phone} onChange={onPhoneChange} name="phone" placeholder="Ваш номер телефона"></input>
-              <input className={style.input} value={email} onChange={onEmailChange} name="email" placeholder="Ваш email"></input>
-              <input className={style.input} value={text} onChange={onTextChange} name="text" placeholder="Ваш вопрос"></input>
+              <input className={style.input} value={phone} onChange={onPhoneChange} name="phone" autoComplete="off" placeholder="Ваш номер телефона"></input>
+              <input className={style.input} value={email} onChange={onEmailChange} name="email" autoComplete="off" placeholder="Ваш email"></input>
+              <input className={style.input} value={text} onChange={onTextChange} name="text" autoComplete="off" placeholder="Ваш вопрос"></input>
               <button className={style.send_button}>Отправить</button>
               </form>
             </div>
