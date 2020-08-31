@@ -16,8 +16,9 @@ const WorkAtUsPage = () => {
     console.log(event);
     event.preventDefault();
     let formData = new FormData();
-    formData.append('file', file);
-    formData.append('email', event.target.email.value);
+    if(file)
+      formData.append('file', file);
+    formData.append('email', email);
     fetch("/api/mail/sendhr", {
         method: 'POST',
         credentials: 'include',
