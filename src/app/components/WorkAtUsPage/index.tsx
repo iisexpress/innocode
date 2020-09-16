@@ -62,7 +62,7 @@ const WorkAtUsPage = () => {
                 Спасибо, ваше резюме отправлено
               </div>   :
               <div>
-                <input className={style.input} onChange={onEmailChange} name="email" autoComplete="off" placeholder="Ваш email"></input>
+                <input className={style.input} onChange={onEmailChange} type="email" required title="my@mail.com" name="email" autoComplete="off" placeholder="Ваш email"></input>
                 {
                   hasFile ? <div className="">
                               <div className={style.fileName}><label>{fileName}</label><img onClick={onFileDelete} src="assets/svg/delete_file.svg" /></div>

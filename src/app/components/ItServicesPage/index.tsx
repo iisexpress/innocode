@@ -75,7 +75,10 @@ const ItServicesPage = () => (
     <div className={style.whywe}>
       <h2>Почему мы?</h2>
       <div className={style.whywe_text}>
-      Текст про нашу уникальность индивидуальный подход и преимущества. Текст про нашу уникальность индивидуальный подход и преимущества. Текст про нашу уникальность индивидуальный подход и преимущества. Текст про нашу уникальность индивидуальный подход и преимущества. Текст про нашу уникальность индивидуальный подход и преимущества. Текст про нашу уникальность индивидуальный подход и преимущества.
+        <p>«Иннокод» не адресует проекты фрилансерам, на аутсорсинг. Мы работаем слаженной командой, отслеживаем все этапы проекта и нацелены на выдачу только качественного продукта.</p>
+        <p>Мы умеем слушать и выявлять потребность. Выслушаем все пожелания и предоставим ответ на понятном языке, обязательно предложим вариант, который удовлетворит.</p>
+        <p>В нашей команде работают не только It-специалисты, но и талантливые дизайнеры и художники- иллюстраторы, что позволяет нам воплощать любые идеи наших заказчиков. </p>
+        <p>Мы выполняем услуги «под ключ», начиная от разработки логотипа, фирменного стиля,  до создания сайта, мобильного приложения, мобильной версии сайта, а также готовы сопровождать проекты на постоянной основе, совершенствуя и дорабатывая, исходя из возникающих потребностей.</p>
       </div>
     </div>
     <div className={style.getservice}>
@@ -85,7 +88,8 @@ const ItServicesPage = () => (
           <div className={style.getservice_item_number}>
               <label>1</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>  
+            <img src="assets/svg/it-service-1.svg" className={style.item_backg_1} />         
             <p>
               Оставляете заявку на<br/> звонок нашего<br/> специалиста любым <br/>удобным способом:<br/> 
               <img src="assets/svg/telegram-white-sml.svg" />&nbsp;<img src="assets/svg/whatsapp-white-sml.svg" />&nbsp;
@@ -100,7 +104,8 @@ const ItServicesPage = () => (
           <div className={style.getservice_item_number}>
               <label>2</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>         
+            <img src="assets/svg/it-service-2.svg" className={style.item_backg_2} />    
             <p>
               За вами закрепляется <br/>персональный<br/> помощник<br/> с первого звонка<br/> до сдачи проекта
             </p>
@@ -113,7 +118,8 @@ const ItServicesPage = () => (
           <div className={style.getservice_item_number}>
               <label>3</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}> 
+            <img src="assets/svg/it-service-3.svg" className={style.item_backg_3} />            
             <label>
               Выявляем вашу<br/> потребность
             </label>
@@ -131,10 +137,11 @@ const ItServicesPage = () => (
       </div>
       <div className={style.line}>
         <div className={style.getservice_item_container}>
-          <div className={style.getservice_item_number}>
+          <div className={style.getservice_item_number}>    
               <label>6</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>      
+              <img src="assets/svg/it-service-6.svg" className={style.item_backg_6} />        
             <label>
             Производим расчеты,<br/> выставляем<br/> коммерческое<br/> предложение<br/> со сметой работ<br/> и сроками
             </label>
@@ -144,10 +151,11 @@ const ItServicesPage = () => (
           <img src="assets/svg/gotoleft.svg" />
         </div>
         <div className={style.getservice_item_container}>
-          <div className={style.getservice_item_number}>
+          <div className={style.getservice_item_number}> 
               <label>5</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>
+              <img src="assets/svg/it-service-5.svg" className={style.item_backg_5} />           
             <label>
             Отвечаем на все вопросы<br/> и учитываем пожелания
             </label>
@@ -160,7 +168,8 @@ const ItServicesPage = () => (
           <div className={style.getservice_item_number}>
               <label>4</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>      
+              <img src="assets/svg/it-service-4.svg" className={style.item_backg_4} />      
             <label>
             Озвучиваем наши<br/> возможности
             </label>
@@ -182,6 +191,7 @@ const ItServicesPage = () => (
               <label>7</label>
             </div>
           <div className={style.getservice_item}>          
+              <img src="assets/svg/it-service-7.svg" className={style.item_backg_7} />  
             <label>
             Формируем и <br/>подписываем договор
             </label>
@@ -195,6 +205,7 @@ const ItServicesPage = () => (
               <label>8</label>
             </div>
           <div className={style.getservice_item}>          
+              <img src="assets/svg/it-service-8.svg" className={style.item_backg_8} />  
             <label>
             Сдаем проект
             </label>

@@ -8,11 +8,17 @@ const Header = () => {
   const [phone, setPhone] = React.useState('')
   const [email, setEmail] = React.useState('')
   const [text, setText] = React.useState('')
+  
   const onShowClick = () => { 
     setShowMailSended(false);
     setShowResults(true);
   }
-  const onHideClick = () => setShowResults(false)
+  const onHideClick = () => { 
+    setEmail(''); 
+    setPhone('');
+    setText('');
+    setShowResults(false)
+  }
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log(event);
@@ -71,7 +77,7 @@ const Header = () => {
       <div className={modal_style.fullfill_content}>
         <div className={modal_style.contactus}> 
           <div className={modal_style.closeButton_container}>
-            <div className={modal_style.closeButton} onClick={onHideClick}>X</div>
+            <div className={modal_style.closeButton} onClick={onHideClick}><img src="assets/svg/close-btn.svg" height="16px" width="16px" className={modal_style.close_btn}/></div>
           </div>
           <div className={modal_style.contactus_container}>  
             { showMailSended ? 
@@ -79,9 +85,9 @@ const Header = () => {
               <form onSubmit={onSubmit}>
                 <h4>Задайте вопрос, и вам ответит<br/> квалифицированный специалист</h4>
                 <div className={modal_style.inputs}>
-                  <input className={modal_style.input} value={phone} onChange={onPhoneChange} name="phone" placeholder="Ваш номер телефона"></input>
-                  <input className={modal_style.input} value={email} onChange={onEmailChange} name="email" placeholder="Ваш email"></input>
-                  <input className={modal_style.input} value={text} onChange={onTextChange} name="text" placeholder="Ваш вопрос"></input>
+                  <input className={modal_style.input} value={phone} pattern="^(((\+[\d]{2,2})|\+\([\d]{2,2}\))|[0])?[0-9]+$" required title="+79998887766" onChange={onPhoneChange} name="phone" placeholder="Ваш номер телефона"></input>
+                  <input className={modal_style.input} value={email} type="email" required title="my@mail.com" onChange={onEmailChange} name="email" placeholder="Ваш email"></input>
+                  <input className={modal_style.input} value={text} onChange={onTextChange} required name="text" placeholder="Ваш вопрос"></input>
                 </div>
                 <button className={modal_style.send_button}>Отправить</button>
               </form>

@@ -40,32 +40,38 @@ const ContactPage = () => {
             <span className={style.header_label}>Контакты</span>
             <div className={style.sm_line}>
               <div className={style.sm_logo}>
-                <img src="assets/svg/instagram-sml-black.svg" />
+                <a href="">
+                  <img src="assets/svg/instagram-sml-black.svg" />
+                </a>
               </div>
               <div className={style.sm_logo}>
-                <img src="assets/svg/facebook-sml-black.svg" />
+                <a href="">
+                  <img src="assets/svg/facebook-sml-black.svg" />
+                </a>
               </div>
               <div className={style.sm_logo}>
-                <img src="assets/svg/telegram-sml-black.svg" />
+                <a href="https://t.me/AbdullinaElena" >
+                  <img src="assets/svg/telegram-sml-black.svg" />
+                </a>
               </div>
               <div className={style.sm_logo}>
-                <img src="assets/svg/whatsapp-sml-black.svg" />
+                <a href="https://wa.me/+79027111175">
+                  <img src="assets/svg/whatsapp-sml-black.svg" />
+                </a>
               </div>
             </div>
-            <span className={style.info_label}>info@innocode.ru</span>
-            <span className={style.info_label}>+7(843)251-00-85</span>
-            <span className={style.info_label}>Республика Татарстан,</span>
-            <span className={style.info_label}>Верхнеуслонский р-н,</span>
-            <span className={style.info_label}>г. Иннополис, ул. Университетская 7</span>
+            <span className={style.info_label}>vopros@innocode.online</span>
+            <span className={style.info_label}>8 800 550-39-77</span>
+            <span className={style.info_label}>Республика Татарстан,<br/>Верхнеуслонский р-н,<br/>г. Иннополис, ул. Университетская 7</span>
         </div>
         { showMailSended ? 
             <div className={style.column_right}><h2>Ваше сообщение направлено,</h2><h2> вам ответит специалист "Иннокода"</h2></div> :
             <div className={style.column_right}>      
               <form onSubmit={onSubmit}>           
               <span className={style.header_label}>Напишите нам</span>
-              <input className={style.input} value={phone} onChange={onPhoneChange} name="phone" autoComplete="off" placeholder="Ваш номер телефона"></input>
-              <input className={style.input} value={email} onChange={onEmailChange} name="email" autoComplete="off" placeholder="Ваш email"></input>
-              <input className={style.input} value={text} onChange={onTextChange} name="text" autoComplete="off" placeholder="Ваш вопрос"></input>
+              <input className={style.input} value={phone} onChange={onPhoneChange} pattern="^(((\+[\d]{2,2})|\+\([\d]{2,2}\))|[0])?[0-9]+$" required title="+79998887766" name="phone" autoComplete="off" placeholder="Ваш номер телефона"></input>
+              <input className={style.input} value={email} type="email" required title="my@mail.com" onChange={onEmailChange} name="email" autoComplete="off" placeholder="Ваш email"></input>
+              <input className={style.input} value={text} onChange={onTextChange} required name="text" autoComplete="off" placeholder="Ваш вопрос"></input>
               <button className={style.send_button}>Отправить</button>
               </form>
             </div>

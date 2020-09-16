@@ -60,7 +60,7 @@ h3{
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
   color: #000000;
 }
@@ -69,7 +69,7 @@ h3{
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 24px;  
   color: #000000;
 }
@@ -149,4 +149,45 @@ h3{
   line-height: 32px;
   text-align: center;
   color: #93C0DD;
+}.getservice_item > img {
+  z-index: 20;
+  position: absolute;
+}
+.item_backg_1{
+  padding-left: 180px;
+  padding-top: 26px;
+  opacity: 0.2;
+}
+.item_backg_2{
+  padding-left: 180px;
+  padding-top: 6px;
+  opacity: 0.2;
+}
+.item_backg_3{
+  padding-left: 0px;
+  padding-top: 0px;
+}
+.item_backg_4{
+  padding-left: 140px;
+  padding-top: 0px;
+}
+.item_backg_5{
+  padding-left: 90px;
+  padding-top: 26px;
+}
+.item_backg_6{
+  padding-left: 30px;
+  padding-top: 26px;
+}
+.item_backg_7{    
+  padding-left: 90px;
+  padding-top: 0px;
+}
+.item_backg_8{
+  padding-left: 90px;
+  padding-top: 6px;
+}
+.item_backg_9{
+  padding-left: 90px;
+  padding-top: 6px;
 }

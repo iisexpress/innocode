@@ -1,4 +1,5 @@
 .content{
+  min-height: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -18,6 +19,9 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+}
+.column_left form{
+  text-align: left;
 }
 .column_right{
   padding: 30px;

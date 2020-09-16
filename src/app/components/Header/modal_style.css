@@ -41,7 +41,8 @@ h4{
   color: #000000;
 }
 .inputs{
-  padding: 64px;
+  margin: 64px 45px 64px 45px;
+  text-align: center;
 }
 .header_label{
   font-family: Nunito Sans;
@@ -62,12 +63,23 @@ h4{
   border-top: none;
   border-right: none;
   background-color: rgba(0, 0, 0, 0);
+  
 }
 .input::placeholder {
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height */
+
+
+  /* Light-grey */
+
   color: #C5CACD;
 }
 .send_button{   
-  margin: auto;
+  margin: 0px auto !important;
   width: 200px;
   border-color: #FFFFFF;
   box-shadow: none;
@@ -102,8 +114,11 @@ textarea:focus, input:focus, button:focus {
   margin: auto;
 }
 .contactus_container{
-  margin: auto;
-  width: 448px;
+  margin: 34px 48px 64px 48px;
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+.close_btn{
+  opacity: 0.3;
 }

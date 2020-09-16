@@ -9,16 +9,24 @@ const IndexPage = () => (
     </div>
     <div className={style.content_sm}>
       <div className={style.sm_logo + " instagram-bg"}>
-        <img src="assets/svg/instagram-bg.svg" />
+        <a href="" >
+          <img src="assets/svg/instagram-bg.svg" />
+        </a>
       </div>
       <div className={style.sm_logo + " facebook-bg"}>
-        <img src="assets/svg/facebook-bg.svg" />
+        <a href="" >
+          <img src="assets/svg/facebook-bg.svg" />
+        </a>
       </div>
       <div className={style.sm_logo + " telegram-bg"}>
-        <img src="assets/svg/telegram-bg.svg" />
+        <a href="https://t.me/AbdullinaElena" >
+          <img src="assets/svg/telegram-bg.svg" />
+        </a>
       </div>
       <div className={style.sm_logo + " whatsapp-bg"}>
-        <img src="assets/svg/whatsapp-bg.svg" />
+        <a href="https://wa.me/+79027111175">
+          <img src="assets/svg/whatsapp-bg.svg" />
+        </a>
       </div>
     </div>
   </div>

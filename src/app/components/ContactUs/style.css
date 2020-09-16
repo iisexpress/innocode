@@ -1,7 +1,7 @@
 .contactus{
   display: block;
   height: 600px;
-  background: #DEECF4;
+  background: #f4f9fc;
 }
 .columns{
   display: inline-flex;
@@ -16,7 +16,8 @@
 }
 form{
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  text-align: center;
 }
 .column_left > h2{
   font-family: Nunito Sans;
@@ -45,6 +46,8 @@ form{
   border-top: none;
   border-right: none;
   background-color: rgba(0, 0, 0, 0);
+  width: 512px;  
+  margin: 0 auto;
 }
 .input::placeholder {
   color: #C5CACD;

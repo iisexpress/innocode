@@ -6,16 +6,24 @@ const Footer = () => (
   <div className={style.footer_logo}>ИННОКОД 2020</div>
   <div className={style.footer_sm}>
     <div className={style.sm_logo}>
-      <img src="assets/svg/instagram-sml.svg" />
+      <a href="" >
+        <img src="assets/svg/instagram-sml.svg" />
+      </a>
     </div>
     <div className={style.sm_logo}>
-      <img src="assets/svg/facebook-sml.svg" />
+      <a href="" >
+        <img src="assets/svg/facebook-sml.svg" />
+      </a>
     </div>
     <div className={style.sm_logo}>
-      <img src="assets/svg/telegram-sml.svg" />
+      <a href="https://t.me/AbdullinaElena" >
+        <img src="assets/svg/telegram-sml.svg" />
+      </a>
     </div>
     <div className={style.sm_logo}>
-      <img src="assets/svg/whatsapp-sml.svg" />
+      <a href="https://wa.me/+79027111175">
+        <img src="assets/svg/whatsapp-sml.svg" />
+      </a>
     </div>
   </div>
   <div className={style.footer_navbar}>

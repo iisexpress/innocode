@@ -111,7 +111,8 @@ const ForStartupsPage = () => (
           <div className={style.getservice_item_number}>
               <label>1</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>  
+            <img src="assets/svg/it-service-1.svg" className={style.item_backg_1} />           
             <p>
               Оставляете заявку на<br/> звонок нашего<br/> специалиста любым <br/>удобным способом:<br/> 
               <img src="assets/svg/telegram-white-sml.svg" />&nbsp;<img src="assets/svg/whatsapp-white-sml.svg" />&nbsp;
@@ -126,7 +127,8 @@ const ForStartupsPage = () => (
           <div className={style.getservice_item_number}>
               <label>2</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>    
+            <img src="assets/svg/it-service-2.svg" className={style.item_backg_2} />         
             <p>
               За вами закрепляется <br/>персональный<br/> помощник<br/> с первого звонка<br/> до сдачи проекта
             </p>
@@ -139,7 +141,8 @@ const ForStartupsPage = () => (
           <div className={style.getservice_item_number}>
               <label>3</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>      
+            <img src="assets/svg/it-service-9.svg" className={style.item_backg_9} />       
             <label>
             Обеспечиваем 100%<br/> конфиденциальность
             </label>
@@ -160,7 +163,8 @@ const ForStartupsPage = () => (
           <div className={style.getservice_item_number}>
               <label>6</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>      
+            <img src="assets/svg/it-service-7.svg" className={style.item_backg_7} />       
             <label>
             Формируем и<br/> подписываем договор
             </label>
@@ -173,7 +177,8 @@ const ForStartupsPage = () => (
           <div className={style.getservice_item_number}>
               <label>5</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>         
+            <img src="assets/svg/it-service-5.svg" className={style.item_backg_5} />    
             <label>
             Делаем предложение по <br/>сопровождению нашими<br/> специалистами
             </label>
@@ -186,7 +191,8 @@ const ForStartupsPage = () => (
           <div className={style.getservice_item_number}>
               <label>4</label>
             </div>
-          <div className={style.getservice_item}>          
+          <div className={style.getservice_item}>        
+            <img src="assets/svg/it-service-3.svg" className={style.item_backg_3} />     
             <label>
             Выявляем вашу<br/> потребность , в <br/>соответствии с ней<br/> квалифицированный<br/> специалист бесплатно<br/> предоставляет оценку,<br/> анализ и решение.
             </label>
@@ -208,6 +214,7 @@ const ForStartupsPage = () => (
               <label>7</label>
             </div>
           <div className={style.getservice_item}>          
+            <img src="assets/svg/it-service-6.svg" className={style.item_backg_6} />   
             <label>
             Получаете услугу
             </label>

@@ -31,7 +31,7 @@ form{
   display: inline-flex;
   flex: 1;
   margin-top: 70px;
-  padding: 40px;
+  padding: 40px 128px;
 }
 .column_left{  
   padding: 30px;
@@ -77,6 +77,7 @@ form{
   border-top: none;
   border-right: none;
   background-color: rgba(0, 0, 0, 0);
+  width: 512px;
 }
 .input::placeholder {
   color: #C5CACD;
@@ -123,7 +124,7 @@ textarea:focus, input:focus, button:focus {
 .contactus{
   display: block;
   height: 500px;
-  background: #DEECF4;
+  background: #f4f9fc;
 }
 .contactus_container{
   margin: auto;
